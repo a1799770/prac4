@@ -4,6 +4,8 @@
 #include <math.h>
 using namespace std;
 
+int term[1000]; // index represents the number of crates
+
 int EfficientTruckloads::numTrucks(int numCrates, int loadSize) {
 
     if (numCrates<=0 || loadSize<=0) {
