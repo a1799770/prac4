@@ -6,7 +6,7 @@
 class EfficientTruckloads {
     public:
     int numTrucks(int, int);
-
+    void print(int[]);
 
 };
 

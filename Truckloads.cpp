@@ -25,7 +25,7 @@ int Truckloads::numTrucks(int numCrates, int loadSize) {
     
     // If numCrates is odd, two lines below split into a larger and smaller pile.
     int largePile=numCrates/2 + numCrates%2; // larger pile
-    int smallPile=numCrates/2;
+    int smallPile=numCrates/2; // smaller
     
     return numTrucks(largePile, loadSize) + numTrucks(smallPile, loadSize);
     }
