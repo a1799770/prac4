@@ -4,7 +4,7 @@
 #include <math.h>
 using namespace std;
 
-int term[1000]= {0}; //array to store the box values 
+int term[100000000]= {0}; //array to store the box values 
 
 int EfficientTruckloads::numTrucks(int numCrates, int loadSize) {
     
@@ -24,7 +24,7 @@ int EfficientTruckloads::numTrucks(int numCrates, int loadSize) {
 
     // memoization
     else if (term[numCrates]!=0) {
-        cout << "memoization is working" << endl;
+        //cout << "memoization is working" << endl;
         return term[numCrates];
     }
     
@@ -36,7 +36,7 @@ int EfficientTruckloads::numTrucks(int numCrates, int loadSize) {
 
     term[numCrates] = numTrucks(largePile, loadSize) + numTrucks(smallPile, loadSize);
 
-    cout << "The trucks required for 9 boxes is: " << term[9] << endl;
+    //cout << "The trucks required for 9 boxes is: " << term[9] << endl;
 
     return term[numCrates];
     
